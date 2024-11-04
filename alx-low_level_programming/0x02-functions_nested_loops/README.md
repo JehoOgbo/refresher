@@ -112,6 +112,6 @@ This program finds and prints the first 98 fibonacci numbers followed by a new l
 - You are not allowed to use any other library (You can’t use GMP etc…)
 - You are not allowed to use long long, malloc, pointers, arrays/tables, or structures
 - You are not allowed to hard code any Fibonacci number (except for 1 and 2)
-This require the use of the data type __int128_t and a recursive function to print its values as this data type doesn't gel with printf. Using '%lld' with it gives a -W=format warning which we are trying to avoid.
+This require the use of the data type '__int128_t' and a recursive function to print its values as this data type doesn't gel with printf. Using '%lld' with it gives a -W=format warning which we are trying to avoid.
 
 ### This project was fun.
