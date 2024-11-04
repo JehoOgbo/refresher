@@ -6,18 +6,18 @@
  *
  * Return: 0
  */
-int main (void)
+int main(void)
 {
-        int number, sum;
+	int number, sum;
 
-        for (number = 3, sum = 0; number < 1024; number++)
-        {
-                if (!(number % 3) || !(number % 5))
-                {
-                        sum += number;
-                }
-        }
-        printf("%d\n", sum);
+	for (number = 3, sum = 0; number < 1024; number++)
+	{
+		if (!(number % 3) || !(number % 5))
+		{
+			sum += number;
+		}
+	}
+	printf("%d\n", sum);
 
-        return (0);
+	return (0);
 }

@@ -7,21 +7,21 @@ Note: All files starting with the same number are related and must be compiled t
 All files in this directory are to be made with the following requirements
 
     Allowed editors: vi, vim, emacs
-    All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-    All your files should end with a new line
+    All files are compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+    All files should end with a new line
     A README.md file, at the root of the folder of the project is mandatory
-    Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-    You are not allowed to use global variables
+    The code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+    Do not use global variables
     No more than 5 functions per file
-    You are not allowed to use the standard library. Any use of functions like printf, puts, etc… is forbidden
+    Do not use the standard library unless otherwise stated. Any use of functions like printf, puts, etc… is forbidden
     You are allowed to use _putchar
-    You don’t have to push _putchar.c, we will use our file. If you do it won’t be taken into account
     In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
     The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
     Don’t forget to push your header file
 
 
-## 100-times_table.c - File to create a times table for digits from 0 to 15. The file consists of three functions.
+## 100-times_table.c
+Create a times table for digits from 0 to 15. The file consists of three functions.
 
 The 'main' function in this file is void print_times_table(int n). All function prototypes for functions used across multiple files are used in header.h which is include guarded.
 The format for the output is shown below.
@@ -95,3 +95,23 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 This is a program that prints the first 50 fibonacci numbers starting with 1 and 2 followed by a new line.
 - The numbers must be separated by a comma.
 - You are allowed to use the standard library.
+
+
+## 103-fibonacci.c
+
+This program prints the sum of all even fibonacci numbers below 4,000,000.
+- The numbers must be separated by a comma.
+- You are allowed to used the standard library
+
+## 104-fibonacci.c
+
+This program finds and prints the first 98 fibonacci numbers followed by a new line.
+
+- The numbers should be separated by comma, followed by a space ,
+- You are allowed to use the standard library
+- You are not allowed to use any other library (You can’t use GMP etc…)
+- You are not allowed to use long long, malloc, pointers, arrays/tables, or structures
+- You are not allowed to hard code any Fibonacci number (except for 1 and 2)
+This require the use of the data type __int128_t and a recursive function to print its values as this data type doesn't gel with printf. Using '%lld' with it gives a -W=format warning which we are trying to avoid.
+
+### This project was fun.
