@@ -1,4 +1,4 @@
-### Refresher
+# Refresher
 
 Prior to starting this repo, it had been a while since I had written any code. I now will do my best to code everyday as this is the only way to get better.
 

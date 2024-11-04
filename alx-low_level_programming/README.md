@@ -1,4 +1,4 @@
-### alx-low_level_programming
+# alx-low_level_programming
 
 
 This directory explores the concepts of low level programming in c. It is part of a project-based learning project and I do my best to write good commit statemets and comments in the code. Not to mention informative READMEs. Enjoy.
