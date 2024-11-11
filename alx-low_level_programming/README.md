@@ -10,3 +10,7 @@ This directory explores the use of functions and nested loops in C.
 ## 0x04-more_functions_nested_loops
 
 This directory dives deeper into the use of fuctions and nested loops in C.
+
+## 0x05-pointers_arrays_strings
+
+This directory explores the concepts of pointers arrays and strings in C.
