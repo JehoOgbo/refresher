@@ -36,6 +36,33 @@ Usage:
     My name is Poppy, and I am 3.5 :) - Woof!
     julien@ubuntu:~/0x0d. structures, typedef$
 
+Define a new type dog_t as a new name of the type struct dog
+Usage:
+
+    julien@ubuntu:~/0x0d. structures, typedef$ cat 3-main.c
+    #include <stdio.h>
+    #include "dog.h"
+
+    /**
+     * main - check the code
+     *
+     * Return: Always 0.
+     */
+    int main(void)
+    {
+        dog_t my_dog;
+
+        my_dog.name = "Poppy";
+        my_dog.age = 3.5;
+        my_dog.owner = "Bob";
+        printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+        return (0);
+    }
+    julien@ubuntu:~/0x0d. structures, typedef$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c -o d
+    julien@ubuntu:~/0x0d. structures, typedef$ ./d
+    My name is Poppy, and I am 3.5 :) - Woof!
+    julien@ubuntu:~/0x0d. structures, typedef$
+
 ## 1-init_dog.c
 
 Function to initialize a variable of type struct dog.
