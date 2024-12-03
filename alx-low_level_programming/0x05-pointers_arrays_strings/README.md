@@ -29,7 +29,9 @@ This file contains function prototypes.
 Prototype: char *_strcpy(char *dest, char *src);
 This file contains a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
 It returns the pointer to dest. Actually the C standard library provides a similar function strcpy. You can run man strcpy to learn more.
-Sample output.
+
+Sample output:
+
     julien@ubuntu:~/0x05$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-main.c 9-strcpy.c -o 9-strcpy
     julien@ubuntu:~/0x05$ ./9-strcpy 
     First, solve the problem. Then, write the code

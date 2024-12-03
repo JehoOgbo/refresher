@@ -1,0 +1,13 @@
+
+#------------------------------------------------------------------------------
+# $File: acorn,v 1.8 2021/04/26 15:56:00 christos Exp $
+# acorn:  file(1) magic for files found on Acorn systems
+#
+
+# RISC OS Chunk File Format
+# From RISC OS Programmer's Reference Manual, Appendix D
+# We guess the file type from the type of the first chunk.
+
+# School files contains "SCHOOL" at offset 0.
+# format: offset<tab>type_of_data_at_point<tab>_searchkey<tab>file_type
+0	string		SCHOOL	School data

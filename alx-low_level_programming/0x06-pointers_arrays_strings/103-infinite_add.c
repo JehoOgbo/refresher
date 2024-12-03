@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 
 /**
  * _pow - raises a number to a power
@@ -10,9 +8,9 @@
  *
  * Return: the value of the operation
  */
-int _pow(int num, int exp)
+__int128_t _pow(__int128_t num, int exp)
 {
-	int save;
+	__int128_t save;
 
 	if (exp == 0)
 		return (1);
@@ -39,10 +37,10 @@ int _pow(int num, int exp)
  *
  * Return: return the integer
  */
-int _atoi(char *s)
+__int128_t _atoi(char *s)
 {
-	int new, calc;
-	int i, count, check1, check2;
+	__int128_t new, calc;
+	__int128_t i, count, check1, check2;
 
 	/* loop through the  string until you reach - or numeral */
 	for (i = 0, count = 0, check1 = -1; s[i] != '\0'; i++)
@@ -80,4 +78,65 @@ int _atoi(char *s)
 		new = new * -1;
 	/* return the integer */
 	return (new);
+}
+
+/**
+ * num_to_str - converts a number to a string
+ *
+ * @num: number to be converted to string
+ *
+ * Return: string that reads the number
+ */
+char *num_to_str(__int128_t num, char *str, int size_r)
+{
+	char temp;
+	int i, j, k;
+
+	i = 0;
+	/* extract digits from the num and add them to str */
+	/* Note: this happens in reverse */
+	while (num > 0 && i > size_r)
+	{
+		str[i++] = num % 10 + '0';
+		num /= 10;
+	}
+
+	/* add terminating null byte */
+	str[i] = '\0';
+	/* reverse the contents of the string */
+	for (j = 0, k = i - 1; j < k; j++, k--)
+	{
+		temp = str[j];
+		str[j] = str[k];
+		str[k] = temp;
+	}
+
+	return (str);
+}
+
+/**
+ * infinite_add - adds two numbers even those which are very long
+ *
+ * @n1: the first number
+ * @n2: the second number
+ * @r: the buffer the function will use to store the result
+ * @size_r: the buffer size
+ *
+ * Return: a pointer to the result
+ */
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
+{
+	__int128_t first;
+	__int128_t second;
+
+	/* convert the first number to a numeric data type __int128_t */
+	first = _atoi(n1);
+
+	/* convert the second number in the same way */
+	second = _atoi(n2);
+	/* add them */
+	/* convert the result back to char */
+	/* return the result */
+
+	return(num_to_str(first + second, r, size_r));
 }
