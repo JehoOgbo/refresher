@@ -50,3 +50,7 @@ This directory explores the concepts of macros and the way the preprocessor hand
 ## 0x0E-structures_typedef
 
 This directory explores the use of structures (structs) to create more powerful data types and using typedef to eliminate the need to constantly type struct whenever the datatype is being used
+
+## 0x0F-function_pointers
+
+This directory explores the concept of pointers to a function in C and how to use them.
