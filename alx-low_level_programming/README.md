@@ -42,3 +42,11 @@ This directory explores introductory concepts into dynamic memory allocation in 
 ## 0x0C-more_malloc_free
 
 This directory explores further concepts in dynamic memory allocation exploring the working of functions such as calloc and realloc. Here, we also take a deep dive into functions like exit from the exec family.
+
+## 0x0D-preprocessor
+
+This directory explores the concepts of macros and the way the preprocessor handles them buttressing the fact that they should be avoided and the need for include guards in header files.
+
+## 0x0E-structures_typedef
+
+This directory explores the use of structures (structs) to create more powerful data types and using typedef to eliminate the need to constantly type struct whenever the datatype is being used
