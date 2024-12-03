@@ -58,3 +58,18 @@ defines a macro named PI as an abbreviation for the token 3.14159265359
     julien@ubuntu:~/0x0c. macro, structures$ ./b
     30171.855
     julien@ubuntu:~/0x0c. macro, structures$
+
+## 2-main.c
+
+Program to print the name of the file from which it was compiled
+
+Sample Usage:
+
+    julien@ubuntu:~/0x0c. macro, structures$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c -o c
+    julien@ubuntu:~/0x0c. macro, structures$ ./c
+    2-main.c
+    julien@ubuntu:~/0x0c. macro, structures$ cp 2-main.c 02-main.c
+    julien@ubuntu:~/0x0c. macro, structures$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 02-main.c -o cc
+    julien@ubuntu:~/0x0c. macro, structures$ ./cc
+    02-main.c
+    julien@ubuntu:~/0x0c. macro, structures$
