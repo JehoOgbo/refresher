@@ -54,3 +54,7 @@ This directory explores the use of structures (structs) to create more powerful 
 ## 0x0F-function_pointers
 
 This directory explores the concept of pointers to a function in C and how to use them.
+
+## 0x10-variadic_functions
+
+This directory explores the concept of variadic functionns in C and how to use them. These are functions that take a variable number of arguments.

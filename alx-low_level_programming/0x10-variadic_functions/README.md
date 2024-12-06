@@ -71,3 +71,56 @@ Sample Usage:
     0, 98, -1024, 402
     julien@ubuntu:~/0x0f. variadic functions$
 
+## 2-print_strings.c
+
+Function that prints strings followed by a new line
+
+
+- Prototype: void print_strings(const char *separator, const unsigned int n, ...);
+- where separator is the string to be printed between the strings
+- and n is the number of strings passed to the function
+- You are allowed to use printf
+- If separator is NULL, don’t print it
+- If one of the string is NULL, print (nil) instead
+- Print a new line at the end of your function
+
+Sample Usage:
+
+    julien@ubuntu:~/0x0f. Variadic functions$ cat 2-main.c
+    #include "variadic_functions.h"
+
+    /**
+     * main - check the code
+     *
+     * Return: Always 0.
+     */
+    int main(void)
+    {
+        print_strings(", ", 2, "Jay", "Django");
+        return (0);
+    }
+    julien@ubuntu:~/0x0f. Variadic functions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-print_strings.c -o c
+    julien@ubuntu:~/0x0f. Variadic functions$ ./c
+    Jay, Django
+    julien@ubuntu:~/0x0f. Variadic functions$
+
+## 3-print_all.c
+
+Function to print numerous data types (variadic)
+
+
+- Prototype: void print_all(const char * const format, ...);
+- where format is a list of types of arguments passed to the function
+* c: char
+* i: integer
+* f: float
+* s: char * (if the string is NULL, print (nil) instead
+* any other char should be ignored
+* see example
+- You are not allowed to use for, goto, ternary operator, else, do ... while
+- You can use a maximum of
+* 2 while loops
+* 2 if
+- You can declare a maximum of 9 variables
+- You are allowed to use printf
+- Print a new line at the end of your function
