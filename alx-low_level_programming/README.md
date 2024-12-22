@@ -62,3 +62,7 @@ This directory explores the concept of variadic functionns in C and how to use t
 ## 0x12-singly_linked_lists
 
 An introduction to linked lists and data structures. In particular singly linked lists.
+
+## 0x13-more_singly_linked_lists
+
+A deeper dive into the uses and applications of singly linked lists to better understand how to manipulate data structures
