@@ -376,3 +376,15 @@ Function that frees a list_t list
     ==3598== For counts of detected and suppressed errors, rerun with: -v
     ==3598== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
     julien@ubuntu:~/0x12. Singly linked lists$
+
+## 101-hello_alx.asm
+
+Write a 64-bit program in assembly that prints Hello, ALX, followed by a new line.
+- You are only allowed to use the printf function
+- You are not allowed to use interrupts
+- Your program will be compiled using nasm and gcc:
+
+    julien@ubuntu:~/$ nasm -f elf64 101-hello_alx.asm && gcc -no-pie -std=gnu89 101-hello_alx.o -o hello
+    julien@ubuntu:~/$ ./hello
+    Hello, ALX
+    julien@ubuntu:~/$
