@@ -58,3 +58,7 @@ This directory explores the concept of pointers to a function in C and how to us
 ## 0x10-variadic_functions
 
 This directory explores the concept of variadic functionns in C and how to use them. These are functions that take a variable number of arguments.
+
+## 0x12-singly_linked_lists
+
+An introduction to linked lists and data structures. In particular singly linked lists.
