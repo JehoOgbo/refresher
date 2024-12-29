@@ -13,7 +13,7 @@ size_t print_listint(listint_t *h)
 	size_t nodes;
 
 	nodes = 0;
-	while(h)
+	while (h)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
